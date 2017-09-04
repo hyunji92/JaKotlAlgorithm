@@ -1,9 +1,11 @@
 package algorithmstudy
 
-class HelloWorld {
 
-    fun main(args:Array<String>) {
-        print("Hello World")
-    }
+fun main(args: Array<String>) {
+
+    println("Hello world!")
 
 }
+
+
+
