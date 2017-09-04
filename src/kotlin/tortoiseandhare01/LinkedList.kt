@@ -23,9 +23,9 @@ class LinkedList() {
         val tailNode = head
 
         // 마지막 노드
-        while (tailNode){
+        /*while (tailNode){
 
-        }
+        }*/
 
     }
 

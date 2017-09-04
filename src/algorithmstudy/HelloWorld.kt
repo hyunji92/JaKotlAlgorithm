@@ -1,0 +1,9 @@
+package algorithmstudy
+
+class HelloWorld {
+
+    fun main(args:Array<String>) {
+        print("Hello World")
+    }
+
+}
