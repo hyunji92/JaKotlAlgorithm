@@ -1,6 +1,5 @@
 package algorithmstudy
 
-import jdk.nashorn.internal.runtime.regexp.joni.Config.log
 import java.util.*
 
 fun main(args: Array<String>) {
@@ -9,12 +8,12 @@ fun main(args: Array<String>) {
 
     var a: Int
     var b: Int
-    var scanner = Scanner(System.`in`)
+    val scanner = Scanner(System.`in`)
 
     testCase = scanner.nextInt()
-    //log.print("test1  : " + testCase)
-    for (i in 0..testCase) {
-        //log.print("test2  : " + testCase)
+
+    for (i in 0 until testCase) {
+
         a = scanner.nextInt()
         b = scanner.nextInt()
 
