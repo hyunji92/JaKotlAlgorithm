@@ -8,8 +8,7 @@ fun main(args: Array<String>) {
     for (i in 0 until scanner.nextInt()) {
         println(scanner.next().split(",").map { it.toInt() }.reduce { a, b -> a + b })
     }
-
-
+}
     /* for (i in 0 until testCase) {
         //a = scanner.nextInt()
         //b = scanner.nextInt()
@@ -20,4 +19,3 @@ fun main(args: Array<String>) {
         //println(tempArray)
 
     }*/
-}
