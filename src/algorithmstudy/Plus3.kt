@@ -13,7 +13,6 @@ fun main(args: Array<String>) {
     testCase = scanner.nextInt()
 
     for (i in 0 until testCase) {
-
         a = scanner.nextInt()
         b = scanner.nextInt()
 
