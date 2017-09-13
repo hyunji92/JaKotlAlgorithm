@@ -1,4 +1,4 @@
-package algorithmstudy
+package algorithmstudy00
 
 import java.util.*
 
