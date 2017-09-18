@@ -6,11 +6,29 @@ fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
     val runCount = scanner.nextInt()
 
-    var s: ArrayList<String>? = null
+    var S: LinkedList<String>? = null
+    var L: LinkedList<String>? = null
+
+    var sample = scanner.next()
+    var x      = scanner.nextInt()
+
+    for (i in 1..20) {
+
+    }
+
+    for(z in 0 until runCount){
+        if (sample.equals("add")){
+
+
+
+        } else if ()
+
+
+    }
 
     fun add(x: Int){
         if (x in 1 .. 20){
-            s?.find { it.isNotEmpty() }
+            S?.find { it.isNotEmpty() }
 
         }
     }
