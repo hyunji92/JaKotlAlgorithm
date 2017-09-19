@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
     var x      = scanner.nextInt()
 
     for (i in 1..20) {
-
+        S?.add(i.toString() + "")
     }
 
     for(z in 0 until runCount){
@@ -21,7 +21,9 @@ fun main(args: Array<String>) {
 
 
 
-        } else if ()
+        } else if (sample.equals("remove")){
+
+        }
 
 
     }
