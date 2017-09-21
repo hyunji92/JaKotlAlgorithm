@@ -1,5 +1,7 @@
 package ttest;
 
+import java.io.BufferedOutputStream;
+import java.io.PrintWriter;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -20,6 +22,11 @@ public class Example {
 
             List<String> L = new LinkedList<String>();
             List<String> S = new LinkedList<String>();
+
+            PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out));
+
+            out.flush();
+
 
 
         }
