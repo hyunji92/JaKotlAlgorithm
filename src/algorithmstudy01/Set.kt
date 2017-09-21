@@ -5,15 +5,14 @@ import java.util.*
 fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
     val runCount = scanner.nextInt()
-
-    var S: LinkedList<String>? = null
-    var L: LinkedList<String>? = null
+    val L = LinkedList<String>()
 
     var x:String? = null
 
-    for (i in 1..20) {
-        S?.add(i.toString() + "")
-    }
+    val S = (1..20).mapTo(destination = LinkedList()) { it.toString() + "" }
+    /*for (i in 1..20) {
+           S.add(i.toString() + "")
+       }*/
 
     for(z in 0..runCount){
         var sample = scanner.next()
@@ -21,20 +20,31 @@ fun main(args: Array<String>) {
             x = scanner.nextLine()
         }
         if (sample.equals("add")){
-
-            if(L?.contains(x)!!){
-                L?.remove(x)
+            if(L.contains(x)){
+                L.add(x.toString())
             }
+        } else if (sample.equals("remove")){
+            if(L.contains(x)){
+                L.remove(x.toString())
+            }
+        } else if (sample.equals("check")){
+            if(L.contains(x)){
+                println(1)
+            }else{
+                println(0)
+            }
+        } else if (sample.equals("toggle")){
+            if(L.contains(x)){
+                L.remove(x.toString())
+            }else{
+                L.add(x.toString())
+            }
+        } else if (sample.equals("all")){
+            L.clear()
+            L.addAll(S.toList())
         }
 
 
-    }
-
-    fun add(x: Int){
-        if (x in 1 .. 20){
-            S?.find { it.isNotEmpty() }
-
-        }
     }
 
 }

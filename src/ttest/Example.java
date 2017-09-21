@@ -1,5 +1,8 @@
 package ttest;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class Example {
 
     static private int k = 1;
@@ -14,6 +17,11 @@ public class Example {
         public void printK(){
             System.out.println(k + a);
             display();
+
+            List<String> L = new LinkedList<String>();
+            List<String> S = new LinkedList<String>();
+
+
         }
     }
 }
