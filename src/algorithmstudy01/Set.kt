@@ -10,53 +10,44 @@ fun main(args: Array<String>) {
 
     val out = PrintWriter(BufferedOutputStream(System.out))
     val L = LinkedList<String>()
-    var x:String? = null
+    var x: String? = null
 
-    val S = (1..20).mapTo(LinkedList<String>()) { it.toString() + "" }
+    val S = (1..20).mapTo(LinkedList()) { it.toString() + "" }
 
-    /* 위처럼 코딩이 가능
-    val S = LinkedList<String>()
-    for (i in 1..20) {
-           S.add(i.toString() + "")
-       }
-    */
-
-    for(z in 0..runCount){
-        var sample = scanner.next()
-        if (!sample.equals("all") && !sample.equals("empty")){
+    for (z in 0..runCount) {
+        val sample = scanner.next()
+        if (sample != "all" && sample != "empty") {
             x = scanner.nextLine()
         }
-        if (sample.equals("add")){
-            if(L.contains(x)){
+
+        when (sample) {
+            "add" -> if (L.contains(x)) {
                 L.add(x.toString())
             }
-        } else if (sample.equals("remove")){
-            if(L.contains(x)){
+            "remove" -> if (L.contains(x)) {
                 L.remove(x.toString())
             }
-        } else if (sample.equals("check")){
-            if(L.contains(x)){
+            "check" -> if (L.contains(x)) {
                 println(1)
-            }else{
+            } else {
                 println(0)
             }
-        } else if (sample.equals("toggle")){
-            if(L.contains(x)){
+            "toggle" -> if (L.contains(x)) {
                 L.remove(x.toString())
-            }else{
+            } else {
                 L.add(x.toString())
             }
-        } else if (sample.equals("all")){
-            L.clear()
-            L.addAll(S.toList())
-        } else if (sample.equals("empty")){
-            L.clear()
+            "all" -> {
+                L.clear()
+                L.addAll(S.toList())
+            }
+            "empty" -> L.clear()
+
         }
 
+        out.flush()
+
     }
-
-    out.flush()
-
 }
 
 
