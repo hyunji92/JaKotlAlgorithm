@@ -29,13 +29,13 @@ public class JavaPermutation {
             arr[j] = temp;
 
             j = num-1;
-            while(i < j) {
+            /*while(i < j) {
                 temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
                 i++;
                 j--;
-            }
+            }*/
             for(int k=0 ; k<num ; k++) {
                 System.out.print(arr[k]+" ");
             }

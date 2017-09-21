@@ -2,7 +2,7 @@ package algorithmstudy01
 
 import java.util.*
 
-fun PrevPermutation(args: Array<String>) {
+fun main(args: Array<String>) {
 
     val scanner = Scanner(System.`in`)
     val num = scanner.nextInt()
