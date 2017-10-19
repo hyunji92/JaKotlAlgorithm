@@ -14,13 +14,8 @@ fun main(args: Array<String>) {
     var m = 0
     var count  =0
 
-    var i = 0
-    while (true) {
-        if (e == E && s == S && m == M) {
-            println(i)
-            break
-        }
 
+    while (true) {
         if (e == 16) {
             e = 1
         }
@@ -31,7 +26,7 @@ fun main(args: Array<String>) {
             m = 1
         }
         if (e == E && s == S && m == M) {
-            System.out.println(count)
+            println(count)
             break
         }
 
@@ -41,6 +36,4 @@ fun main(args: Array<String>) {
         count++
 
     }
-
-
 }
